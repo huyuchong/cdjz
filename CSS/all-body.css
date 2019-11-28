@@ -1,0 +1,86 @@
+.position-form {
+    background: url(../image/all-bkg.png);
+    height: 144px;
+    padding: 0 20%;
+}
+
+.position-form span {
+    font-weight: 700;
+    color: #57c3e0;
+    font-size: 36px;
+    line-height: 144px;
+}
+
+.position-form input[type="text"] {
+    height: 40px;
+    margin-left: 10%;
+    width: 50%;
+    padding-left: 10px;
+}
+
+.position-form input[type="button"] {
+    height: 40px;
+    margin-left: -1%;
+    width: 8%;
+    border: none;
+    background-color: #57c3e0;
+    color: #fff;
+}
+
+.all-work {
+    min-height: 683px;
+}
+
+.all-work hr {
+    border-top: 1px solid #999;
+}
+
+.all-work h4 {
+    color: #999;
+}
+
+.number {
+    border: 1px solid black;
+    padding: 10px 5px 15px 5px;
+    margin-bottom: 1%;
+}
+
+.position1,
+.position2,
+.position3,
+.position4 {
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;
+}
+
+.position1 .workName01 span {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.position2 {
+    text-align-last: left;
+}
+
+.position2 .xx {
+    margin-left: 20%;
+}
+
+.position3 {
+    color: #f00;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.position4 input {
+    border: none;
+    background: #57c3e0;
+    color: #fff;
+    width: 40%;
+    height: 35px;
+}
+
+.position4 {
+    height: 35px;
+}

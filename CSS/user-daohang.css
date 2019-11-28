@@ -1,0 +1,71 @@
+.commonTopbar {
+    height: 36px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.commonTopbar img {
+    width: 32px;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.bar-left,
+.bar-right {
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.bar-left span,
+.bar-right span {
+    color: #000;
+}
+
+.bar-right {
+    position: relative;
+    left: 72%;
+}
+
+.user-dh {
+    background: #57c3e0;
+}
+
+.user-dh a {
+    color: #fff;
+}
+
+.top-right1 {
+    margin-left: 60%;
+}
+
+.top-right1,
+.top-left1 {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.top-left1 a {
+    font-size: 250%;
+}
+
+.top-right1 ul li {
+    display: inline-block;
+    padding: 0 0 0 13px;
+}
+
+.top-right1 ul li a {
+    font-size: 18px;
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 70%;
+    }
+}

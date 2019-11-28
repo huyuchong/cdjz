@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/logo.ico" type="images/x-icon">
+    <title>长大兼职</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="jQuery/jquery-3.1.1.min.js"></script>
+    <script src="jQuery/cookie/src/jquery.cookie.js"></script>
+    <script src="JS/vue.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/denglu.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="CSS/p.css">
+</head>
+
+<body>
+    <!-- 页眉 -->
+    <div class="bn-header">
+        <div class="header">
+            <div class="w  clearfix">
+                <a href="/" class="jz-tb" title="长大兼职">长大兼职</a>
+                <!-- 下拉表单选择城区 -->
+                <!-- <select name="#" id="select">
+                    <option value="荆州区">荆州区</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select> -->
+                <ul class="nav" data="index">
+                    <li class="ulli clone active">
+                        <a href="#">首页</a>
+                    </li>
+                    <li class="ulli zc">
+                        <a href="#" onclick="showzc()">免费注册</a>
+                    </li>
+                    <li class="ulli dl">
+                        <a href="#" onclick="showdl()">登录</a>
+                    </li>
+                    <li class="ulli user">
+                        <a href="#">个人中心</a>
+                    </li>
+                    <li class="last dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">APP下载
+                        <b class="caret"></b></a>
+                        <ul class="dropdown-mean">
+                            <li><img src="#" alt="二维码" class="dropdown-mean"></li>
+                        </ul>
+
+                    </li>
+                </ul>
+                <a href="#" class="jz-post">发布招聘</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- body -->
+
+    <div class="container" id="mid">
+        <div class="logo">
+            <h1>在长大找兼职 就上长大兼职</h1>
+            <h3>属于长大人自己的兼职平台</h3>
+        </div>
+        <div class="position banner-text">
+            <div class="position-form">
+                <form action="">
+                    <input type="text" placeholder="请输入所需要的职位">
+                    <input type="button" value="搜索">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="centent-body position">
+        <div class="mod-head">
+            <div class="mod-head-left">
+                <div class="title">
+                    <h2>
+                        猜你喜欢
+                    </h2>
+                </div>
+            </div>
+            <div class="mod-head-right">
+                <a href="#" class="mod-bth">查看更多》</a>
+            </div>
+        </div>
+        <ul class="position-list">
+            <li class="position-item">
+                <a href="#" class="item-info">
+                    <div class="item-class">
+                        <div class="item-class-left">
+                            类型
+                        </div>
+                        <div class="item-class-right">
+                            <span>9</span>分
+                        </div>
+                    </div>
+                    <div class="item-name">
+                        兼职名字
+                    </div>
+                    <ul class="list">
+                        <li class="list-item">全职</li>
+                        <li class="list-item place">荆州区城南街道</li>
+                        <li class="list-item">招聘 <span>N</span> 人</li>
+                    </ul>
+                    <div class="money">
+                        <span>钱每月</span>
+                    </div>
+                    <input type="hidden" name="jobid">
+
+                </a>
+            </li>
+            <li class="position-item">
+                <a href="#" class="item-info">
+                    <div class="item-class">
+                        <div class="item-class-left">
+                            类型
+                        </div>
+                        <div class="item-class-right">
+                            <span>9</span>分
+                        </div>
+                    </div>
+                    <div class="item-name">
+                        兼职名字
+                    </div>
+                    <ul class="list">
+                        <li class="list-item place">全职</li>
+                        <li class="list-item place">荆州区城南街道</li>
+                        <li class="list-item">招聘 <span>N</span> 人</li>
+                    </ul>
+                    <div class="money">
+                        <span>钱每月</span>
+                    </div>
+                    <input type="hidden" name="jobid">
+                </a>
+            </li>
+            <li class="position-item">
+                <a href="#" class="item-info">
+                    <div class="item-class">
+                        <div class="item-class-left">
+                            类型
+                        </div>
+                        <div class="item-class-right">
+                            <span>9</span>分
+                        </div>
+                    </div>
+                    <div class="item-name">
+                        兼职名字
+                    </div>
+                    <ul class="list">
+                        <li class="list-item">全职</li>
+                        <li class="list-item place">荆州区城南街道</li>
+                        <li class="list-item">招聘 <span>N</span> 人</li>
+                    </ul>
+                    <div class="money">
+                        <span>钱每月</span>
+                    </div>
+                    <input type="hidden" name="jobid">
+                </a>
+            </li>
+            <li class="position-item">
+                <a href="#" class="item-info">
+                    <div class="item-class">
+                        <div class="item-class-left">
+                            类型
+                        </div>
+                        <div class="item-class-right">
+                            <span>9</span>分
+                        </div>
+                    </div>
+                    <div class="item-name">
+                        兼职名字
+                    </div>
+                    <ul class="list">
+                        <li class="list-item">全职</li>
+                        <li class="list-item place">荆州区城南街道</li>
+                        <li class="list-item">招聘 <span>N</span> 人</li>
+                    </ul>
+                    <div class="money">
+                        <span>钱每月</span>
+                    </div>
+                    <input type="hidden" name="jobid">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="centent-body position">
+        <div class="mod-head">
+            <div class="mod-head-left">
+                <div class="title">
+                    <h2>
+                        热门兼职
+                    </h2>
+                </div>
+            </div>
+            <div class="mod-head-right">
+                <a href="#" class="mod-bth">查看更多》</a>
+            </div>
+        </div>
+        <ul class="position-list">
+            <li class="position-item">
+                <a href="#" class="item-info">
+                    <div class="item-class">
+                        <div class="item-class-left">
+                            类型
+                        </div>
+                        <div class="item-class-right">
+                            <span>9</span>分
+                        </div>
+                    </div>
+                    <div class="item-name">
+                        兼职名字
+                    </div>
+                    <ul class="list">
+                        <li class="list-item">全职</li>
+                        <li class="list-item place">荆州区城南街道</li>
+                        <li class="list-item">招聘 <span>N</span> 人</li>
+                    </ul>
+                    <div class="money">
+                        <span>钱每月</span>
+                    </div>
+                    <input type="hidden" name="jobid">
+                </a>
+            </li>
+            <li class="position-item">
+                <a href="#" class="item-info">
+                    <div class="item-class">
+                        <div class="item-class-left">
+                            类型
+                        </div>
+                        <div class="item-class-right">
+                            <span>9</span>分
+                        </div>
+                    </div>
+                    <div class="item-name">
+                        兼职名字
+                    </div>
+                    <ul class="list">
+                        <li class="list-item">全职</li>
+                        <li class="list-item place">荆州区城南街道</li>
+                        <li class="list-item">招聘 <span>N</span> 人</li>
+                    </ul>
+                    <div class="money">
+                        <span>钱每月</span>
+                    </div>
+                    <input type="hidden" name="jobid">
+                </a>
+            </li>
+            <li class="position-item">
+                <a href="#" class="item-info">
+                    <div class="item-class">
+                        <div class="item-class-left">
+                            类型
+                        </div>
+                        <div class="item-class-right">
+                            <span>9</span>分
+                        </div>
+                    </div>
+                    <div class="item-name">
+                        兼职名字
+                    </div>
+                    <ul class="list">
+                        <li class="list-item">全职</li>
+                        <li class="list-item place">荆州区城南街道</li>
+                        <li class="list-item">招聘 <span>N</span> 人</li>
+                    </ul>
+                    <div class="money">
+                        <span>钱每月</span>
+                    </div>
+                    <input type="hidden" name="jobid">
+                </a>
+            </li>
+            <li class="position-item">
+                <a href="#" class="item-info">
+                    <div class="item-class">
+                        <div class="item-class-left">
+                            类型
+                        </div>
+                        <div class="item-class-right">
+                            <span>9</span>分
+                        </div>
+                    </div>
+                    <div class="item-name">
+                        兼职名字
+                    </div>
+                    <ul class="list">
+                        <li class="list-item">全职</li>
+                        <li class="list-item place">荆州区城南街道</li>
+                        <li class="list-item">招聘 <span>N</span> 人</li>
+                    </ul>
+                    <div class="money">
+                        <span>钱每月</span>
+                    </div>
+                    <input type="hidden" name="jobid">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 登录页 -->
+    <div class="logon js-moder" id="login">
+        <div class="close js-moder-head">
+            <a href="#" class="js-moder-close close" title="关闭对话框" onclick="closedenglu()">X</a>
+        </div>
+        <h1>账户登录</h1>
+        <form action="">
+            <input type="text" placeholder="账号：" name="mobile" class="mobile">
+            <p class="error-tip"></p>
+            <input type="password" name="password" class="password" placeholder="密码：">
+            <p class="error-tip"></p>
+            <p class="wangji"><a href="">忘记密码？</a></p>
+            <input type="button" value="登录" id="submitlogin">
+            <p class="error-tj"></p>
+        </form>
+        <p><a href="#" id="gotozhuce" onclick="gotozhuce()">立即注册</a></p>
+    </div>
+
+    <!-- 注册页 -->
+    <div class="register js-rgs" id="register">
+        <div class="close js-rgs-head">
+            <a href="#" class="js-rgs-close close" title="关闭对话框" onclick="closezhuce()">X</a>
+        </div>
+        <h1>账户注册</h1>
+        <form action="" id="register1">
+            <input type="text" name="_email" class="email" placeholder="邮箱：">
+            <p class="error-tip"></p>
+            <input type="password" name="password" class="regpwd" placeholder="密码：">
+            <p class="error-tip"></p>
+            <input type="button" value="注册" id="submitregister">
+            <p class="error-tj"></p>
+        </form>
+        <p><a href="#" id="gotodenglu" onclick="gotodenglu()">去登录</a></p>
+    </div>
+
+    <!-- 页尾 -->
+    <div class="bn-bottom">
+        <div class="bottom">
+            <span id="lo">长大兼职</span>
+            <span>友情连接：
+                <a href="https://www.jianzhimao.com/" title="https://www.jianzhimao.com">兼职猫</a>
+                <a href="https://jingzhou.58.com" title="https://jingzhou.58.com">58同城</a>
+                <a href="https://www.amap.com/" title="https://www.amap.com">高德地图</a>
+                <a href="https://www.zhipin.com/" title="https://www.zhipin.com">BOSS直聘</a>
+                <a href="https://jingzhou.zbj.com/" title="https://jingzhou.zbj.com">猪八戒网</a>
+                <a href="https://www.jobui.com/" title="https://www.jobui.com">职友集</a>
+            </span>
+            <p><a href="http://www.siteloop.net/html/yuol.cn">长大在线制作</a></p>
+        </div>
+    </div>
+
+    <!-- 遮罩层 -->
+    <div id="cover"></div>
+    <div class="p">
+        <p></p>
+        <input type="button" value="确定" onclick="closetishi()">
+    </div>
+    <!-- http请求 -->
+    <script src="JS/http.js"></script>
+    <!-- 页面跳转 -->
+    <script src="JS/goto.js"></script>
+    <script src="JS/home.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

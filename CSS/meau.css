@@ -1,0 +1,412 @@
+.leftmeau-div {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    min-height: 700px;
+    padding-top: 8px;
+    margin-left: -5px;
+    margin-top: 22px;
+    background: #f2faf8;
+}
+
+.left-content {
+    padding-top: 25px;
+    color: #595757;
+    padding-bottom: 50px;
+}
+
+.user-header {
+    width: 100%;
+    height: 10%;
+    line-height: 200%;
+    margin: 0 auto;
+    font-size: 170%;
+    font-weight: 500;
+    border-bottom: 3px solid #57c3e0;
+}
+
+.left-content .left-header span {
+    color: #000;
+}
+
+.leftmeau-ul {
+    margin-top: 4px;
+    margin-left: 0;
+    cursor: default;
+}
+
+.leftmeau-ul .active {
+    background: #57c3e0;
+}
+
+.leftmeau-ul .active a {
+    color: #fff !important;
+}
+
+.leftmeau-ul li {
+    cursor: pointer;
+    line-height: 42px;
+    padding-left: 30%;
+    font-size: 16px;
+}
+
+.leftmeau-ul li a {
+    color: #000;
+}
+
+.leftmeau-ul li img {
+    width: 21px;
+}
+
+#webpart_js_1 {
+    padding: 20px 35.5px 0 36px;
+}
+
+#webpart_js_1 div[class="choose"] {
+    display: none;
+    background: #000;
+}
+
+#webpart_js_1 .active {
+    display: block;
+}
+
+.rightmeau-div {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 80%;
+}
+
+.border {
+    border: 1px solid black;
+    min-height: 700px;
+    padding: 10px 0 0 20px;
+}
+
+.message-left,
+.message-right {
+    display: inline-block;
+}
+
+#meau2 .resume-header {
+    padding: 5px 0 0 5px;
+    height: 35px;
+}
+
+#meau2 .resume-header a {
+    margin-left: 7%;
+}
+
+#meau2 .resume-header a img {
+    height: 27px;
+}
+
+#meau2 .resume-header a span {
+    color: rag(87, 195, 224);
+}
+
+#meau2 .img img {
+    width: 100%;
+}
+
+.message-left {
+    width: 40%;
+    padding-left: 8%;
+}
+
+.message-right {
+    width: 57%;
+    padding: 5%;
+}
+
+.message-right ul {
+    width: 100%;
+}
+
+.message-right ul li {
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.forme {
+    height: 15px;
+    width: 100%;
+    background-color: #007d9f;
+}
+
+.introduce-left,
+.introduce-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.introduce-left {
+    width: 80%;
+    padding: 10px 0 0 25px;
+}
+
+.introduce-right {
+    width: 15%;
+}
+
+.issue-header {
+    padding: 20px 0 0 35px;
+}
+
+.issue-header span {
+    font-size: 18px;
+    font-weight: 700;
+    height: 1%;
+}
+
+.issue-header input {
+    color: #fff;
+    background-color: #57c3e0;
+    border: none;
+    border-radius: 10%;
+    width: 9%;
+    height: 22px;
+    margin-left: 10%;
+}
+
+.issue-bottom {
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.issue-bottom table {
+    width: 100%;
+}
+
+.issue-bottom table tr:first-child td {
+    color: #000 !important;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.issue-bottom table tr {
+    height: 30px;
+    border-bottom: 1px solid #999999;
+}
+
+.issue-bottom table tr>td:first-child {
+    width: 40%;
+}
+
+.issue-bottom table tr td {
+    width: 25%;
+    text-align: center;
+}
+
+.issue-bottom table tbody tr td:last-child input[type="button"] {
+    color: #fff;
+    background: #57c3e0;
+    border: 1px solid #57c3e0;
+    padding: 1px;
+}
+
+.rwork {
+    display: none;
+}
+
+.rwork-header {
+    padding-left: 30px;
+}
+
+.issue-in-body form table,
+.rwork-body form table {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.issue-in-body form table tr td:first-child,
+.rwork-body form table tr td:first-child {
+    width: 20%;
+    font-size: 18px;
+}
+
+.issue-in-body form table tr,
+.rwork-body form table tr {
+    height: 45px;
+}
+
+.issue-in-body form table tr td:last-child,
+.rwork-body form table tr td:last-child {
+    width: 70%;
+}
+
+.issue-in-body form table tr td:last-child input,
+.rwork-body form table tr td:last-child input {
+    width: 50%;
+    height: 25px;
+}
+
+.issue-in-body form,
+.rwork-body form {
+    text-align: center;
+}
+
+.issue-in-body form input[type='button'],
+.rwork-body form input[type='button'] {
+    height: 35px;
+    width: 10%;
+    border: none;
+    background: #57c3e0;
+    color: #fff;
+}
+
+.mine-bottom {
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.mine-bottom table {
+    width: 100%;
+}
+
+.mine-bottom table tr {
+    height: 30px;
+    border-bottom: 1px solid #999999;
+}
+
+.mine-bottom table tr>td:first-child {
+    width: 40%;
+}
+
+.mine-bottom table tr td {
+    width: 25%;
+    text-align: center;
+}
+
+.mine-bottom table tr:first-child td {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000 !important;
+}
+
+.mine-bottom table tr td:last-child {
+    color: #000099;
+}
+
+.mine-bottom table tbody tr td:last-child input[type="button"] {
+    color: #000;
+    background: #f00;
+    border: 1px solid #f00;
+    padding: 1px;
+}
+
+table tr td:last-child img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.eva-body {
+    min-height: 600px;
+}
+
+.eb-t {
+    display: block;
+    height: 50px;
+    padding-right: 10%;
+}
+
+.navbar-nav {
+    width: 100%;
+    border-bottom: 1px solid #999;
+}
+
+.eb-c .eb-b,
+.eb-a {
+    margin-top: 10px;
+    display: none;
+    padding-right: 10%;
+}
+
+.eva-body .active {
+    display: block;
+}
+
+.eb-b table tr td:first-child {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    width: 25%;
+}
+
+.eb-b table {
+    width: 100%;
+}
+
+.eb-b table tr {
+    border-bottom: 1px solid #999;
+}
+
+.navbar-nav li a {
+    color: rgb(102, 102, 102);
+}
+
+.navbar-nav .active a {
+    color: rgb(74, 103, 175);
+}
+
+.eb-a table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.eb-a table tr td {
+    text-align: center;
+    font-size: 18px;
+}
+
+.eb-a table tr {
+    border-bottom: 1px solid #999;
+}
+
+.issue-in {
+    display: none;
+    padding: 0 20px 0 40px
+}
+
+.issue-init {
+    display: none;
+    padding: 20px;
+}
+
+.issue-init {
+    width: 100%;
+    height: 100%;
+}
+
+.issue-init-body table {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+}
+
+.issue-init-body table tr {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.issue-init-body table td {
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+}
+
+.issue-init-body table td input {
+    border: none;
+    width: 50%;
+}
+
+.issue-init-header input {
+    margin-left: 4%;
+    border: none;
+    border-radius: 10%;
+    width: 10%;
+}

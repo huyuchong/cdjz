@@ -1,0 +1,40 @@
+1.主页的发布deliver表单
+（1）兼职名——workName01
+（2）长期招聘或短期招聘？short—long？一个变量，两种值，变量名规定为 isLong
+（3）薪资——例  100RMB/天，即 num+“RMB”+“天”（或年月），两个变量，
+一个整型，规定为num01，一个字符型，规定为time01
+
+
+2.我的发布
+表一
+（1）我要招聘的职务——workName02
+（2）薪资——格式同上——变量名为num02，time02
+（3）工作时间——workTime
+（4）工作地点——workPlace
+（5）联系电话——phoneNumber
+（6）招聘人数——neededNum
+（7）职位描述——workDetail
+表二
+（1）单位名称——companyName
+（2）单位地址——companyAddress
+（3）行业种类——workType
+（4）规模——peopleNum
+（5）单位描述——companyDetail
+
+
+3.我的中心
+（1）我的简历
+#1.姓名——name
+#2.性别——sex
+#3.学历——degree
+#4.手机号——phone
+#5.我的优势特点——myAdvantage
+#6.职业 ----profession
+（2）我的发布
+同上
+
+（3）我的已做兼职
+#1.
+
+（4）我的评论
+#1.

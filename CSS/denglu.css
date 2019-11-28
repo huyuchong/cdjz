@@ -1,0 +1,125 @@
+.js-moder {
+    display: none;
+    background-color: #fff;
+    width: 440px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 7%;
+    z-index: 3;
+}
+
+.js-rgs-head,
+.js-moder-head {
+    color: #000000;
+    height: 34px;
+}
+
+.js-rgs-close,
+.js-moder-close {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    color: #000;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: -30px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 1;
+}
+
+.js-rgs-close a,
+.js-moder-close a {
+    text-decoration: none;
+    color: #000;
+}
+
+.js-rgs h1,
+.js-moder h1 {
+    text-align: center;
+}
+
+.js-rgs form,
+.js-moder form {
+    text-align: center;
+}
+
+.js-rgs form input,
+.js-moder form input {
+    margin-top: 10px;
+    height: 34px;
+    width: 350px;
+}
+
+.wangji {
+    text-align: right;
+    margin-right: 36px;
+    padding-top: 5px;
+}
+
+.js-rgs p a,
+.js-moder p a {
+    font-size: 18px;
+    color: #000;
+}
+
+#gotodenglu,
+#gotozhuce {
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+#submitregister,
+#submitlogin {
+    margin: 0;
+    background-color: #57c3e0;
+    color: #fff;
+    border: 0px;
+}
+
+.getyzm {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.js-rgs {
+    display: none;
+    background-color: #fff;
+    width: 440px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 7%;
+    z-index: 3;
+}
+
+#submitregister {
+    margin-top: 10px;
+}
+
+.emailyanz input[type="text"] {
+    width: 220px;
+}
+
+.emailyanz input[type="button"] {
+    width: 30%;
+    margin-left: -5px;
+}
+
+.error-tj,
+.error-tip {
+    color: red;
+}
+
+p {
+    margin: 0;
+}

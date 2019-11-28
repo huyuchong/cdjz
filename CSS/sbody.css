@@ -1,0 +1,139 @@
+.sbody {
+    min-height: 900px;
+}
+
+.border {
+    border: 1px solid #000;
+    height: 250px;
+    padding: 15px;
+}
+
+.work-left,
+.work-right {
+    display: inline-block;
+    height: 100%;
+    width: 49%;
+    vertical-align: top;
+}
+
+.work-left ul li {
+    font-size: 18px;
+}
+
+.work-left ul {
+    margin-top: 12%;
+}
+
+.work-left ul li span {
+    margin-left: 3%;
+}
+
+.workName01 {
+    font-weight: 600;
+}
+
+.num {
+    margin-left: 0 !important;
+    color: #f00;
+}
+
+.work-right {
+    text-align: right;
+    padding-right: 5%;
+}
+
+.money {
+    color: #f00;
+    height: 50%;
+    font-size: 35px;
+}
+
+.button {
+    height: 40%;
+}
+
+.button input {
+    height: 50%;
+    width: 40%;
+    color: #fff;
+    background: #57c3e0;
+    border: none;
+}
+
+.sbody h3 {
+    margin: 0;
+}
+
+.introduce-body {
+    color: #999;
+}
+
+.introduce-body h6,
+.boss-body h6 {
+    font-size: 16px;
+}
+
+.introduce-body ol {
+    margin-left: 5%;
+}
+
+.boss-body {
+    padding-left: 5%;
+}
+
+.boss-body input {
+    color: #57c3e0;
+    background: #fff;
+    border: 1px solid #57c3e0;
+    margin: 2% 0 0 4%;
+    border-radius: 12%;
+}
+
+.boss-body table tr:last-child td:last-child img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sure {
+    display: none;
+    border: 1px solid black;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 3;
+    border-radius: 4%;
+}
+
+.sure span {
+    text-align: center;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    height: 8%;
+    width: 4%;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.sure h2 {
+    text-align: center;
+    line-height: 350%;
+    height: 50%;
+}
+
+.sure input {
+    display: inline-block;
+    width: 13%;
+    height: 16%;
+    border: 1px solid #000;
+    border-radius: 3%;
+    margin-left: 24.5%;
+}

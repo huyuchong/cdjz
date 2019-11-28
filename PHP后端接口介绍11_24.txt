@@ -1,0 +1,59 @@
+date:2019/11/24
+
+登陆：http://101.200.145.9/login.php
+前端提供：  邮箱(emali)、密码(password)。
+后端返回：
+若密码正确，返回 code:200,msg:登陆成功
+若密码错误，返回 code:350,msg:邮箱或密码错误
+
+注册：http://101.200.145.9/rs.php
+前端提供：  邮箱(emali)、密码(password)
+后端返回：
+若注册成功，返回	code:200,msg:注册成功
+若邮箱已存在，返回	code:300,msg:该邮箱已被注册，请重新输入
+若注册失败，返回	code:400,msg:注册失败，请稍后再试
+
+保存简历：http://101.200.145.9/userin.php（需先登录才可使用此文件）
+前端提供：   名字(name)、性别(sex)、学历(degree)、职业(status)、电话(tel)、优势(adv)
+后端返回：
+若保存成功，返回	code:200,msg:个人信息保存成功
+若保存失败，返回	code:410,msg:个人信息返回失败，请稍后再试
+
+查看个人简历（个人中心）：http://101.200.145.9/userout.php
+前端提供：姓名(id)
+后端返回：
+若还没有保存简历，返回	code:475,msg:未保存简历
+若提取成功，返回	code:200,msg:提取成功,data:{id,name,sex,degree,status,tel,adv}
+
+发布兼职：http://101.200.145.9/jobin.php
+前端提供： 兼职名称(jobname)，工资(money)，工作时间(time)，工作地点(place)，招收人数(membernum)，类型——全职或兼职(parttime)，电话(tel)，公司名称（companyname），公司地址（companyaddress），工作简介(interview)
+后端返回：
+若保存成功，返回	code:200,msg:个人信息保存成功
+若保存失败，返回	code:400,msg保存失败，请稍后再试
+
+首页兼职（返回所有兼职）：http://101.200.145.9/jobout.php
+后端返回：
+若返回成功，返回	code:200,msg:查询成功，arr（二维数组）:{id,jobname,money,time,place,membernum,parttime,tel,companyname,companyaddress,interview}
+
+关键词搜索：http://101.200.145.9/searchjob.php（只支持兼职名字关键词搜索）
+前端提供：  兼职名称(jobname)
+后端返回：
+若查询成功，返回	code:200,msg:查询成功，arr(二维数组):{id,jobname,money,time,place,membernum,parttime,tel,interview}
+若查询的兼职不存在，返回    code:490,msg:为查询到相关职业
+
+
+查看自己发布过的兼职：http://101.200.145.9/joboutown.php
+前端提供：登陆id(loginid)
+后端返回：
+若查询成功，返回	code:200,msg:查询成功,arr(二维数组):{id,jobname,money,time,place,membernum,parttime,tel,interview}
+若并未发布兼职，返回	code:501,msg:未发布过兼职
+
+查看兼职详情：http://101.200.145.9/workdetail.php
+前端提供：兼职id（即jobout.php文件中后端返回的id）
+后端返回：
+若没有该兼职的详细信息	code:502,msg:未找到相关兼职
+若查询成功		code:200,msg：查询成功,arr:{id,jobname,money,time,place,membernum,parttime,tel,companyname,companyaddress,interview}
+
+
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>长大兼职</title>
+    <script src="jQuery/jquery-3.1.1.min.js"></script>
+    <script src="jQuery/cookie/src/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js">
+    <link rel="shoutcut icon" href="/logo.ico">
+    <link rel="stylesheet" href="CSS/cover.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="CSS/sbody.css">
+    <link rel="stylesheet" href="CSS/p.css">
+</head>
+
+<body>
+    <div class="bn-header">
+        <div class="header">
+            <div class="w  clearfix">
+                <a href="/" class="jz-tb" title="长大兼职">长大兼职</a>
+                <ul class="nav" data="index">
+                    <li class="ulli current active" id="shouye">
+                        <a href="#">首页</a>
+                    </li>
+                    <li class="ulli reback">
+                        <a href="#"> 退出</a>
+                    </li>
+                    <li class="ulli">
+                        <a href="user.html">个人中心</a>
+                    </li>
+                    <li class="last dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">APP下载
+                                <b class="caret"></b></a>
+                        <ul class="dropdown-mean">
+                            <li><img src="#" alt="二维码" class="dropdown-mean"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#" class="jz-post" target="blank">发布招聘</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sbody container">
+        <span>长大兼职&NestedGreaterGreater;兼职详情</span>
+        <div class="border work">
+            <div class="work-left">
+                <h2 class="workName01">
+                    兼职名字
+                </h2>
+                <ul>
+                    <li>
+                        <img src="image/time.png" alt="时间">
+                        <span>2019-11-03——201912-09</span>
+                    </li>
+                    <li>
+                        <img src="image/place.png" alt="地点">
+                        <span>荆州市某地</span>
+                    </li>
+                    <li>
+                        <img src="image/people.png" alt="人数">
+                        <span>招聘
+                        <span class="num">2</span>人
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="work-right">
+                <div class="money">
+                    <span>num元/月</span>
+
+                </div>
+                <div class="button">
+                    <input type="button" value="报名" onclick="baoming()">
+                </div>
+            </div>
+        </div>
+        <div class="border introduce">
+            <div class="introduce-header">
+                <h3>职位描述</h3>
+            </div>
+            <hr>
+            <div class="introduce-body">
+                <p>备注：请知悉公司直招，非中介，不收取任何费用！面试前请电联，以免无人接待！</p>
+                <h6>一、招聘要求</h6>
+                <ol>
+                    <li>qw</li>
+                </ol>
+            </div>
+        </div>
+        <div class="border boss">
+            <div class="boss-header">
+                <h3>雇主信息</h3>
+            </div>
+            <hr>
+            <div class="boss-body">
+                <h6 class="name">The boss name</h6>
+                <table>
+                    <tr>
+                        <td>联系电话：</td>
+                        <td>1212321</td>
+                    </tr>
+                    <tr>
+                        <td>兼职评价</td>
+                        <td>
+                            <img src="image/0.png" alt="">
+                            <img src="image/0.png" alt="">
+                            <img src="image/0.png" alt="">
+                            <img src="image/0.png" alt="">
+                            <img src="image/0.png" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="bn-bottom">
+        <div class="bottom">
+            <span id="lo">长大兼职</span>
+            <span>友情连接：
+                            <a href="https://www.jianzhimao.com/" title="https://www.jianzhimao.com">兼职猫</a>
+                            <a href="https://jingzhou.58.com" title="https://jingzhou.58.com">58同城</a>
+                            <a href="https://www.amap.com/" title="https://www.amap.com">高德地图</a>
+                            <a href="https://www.zhipin.com/" title="https://www.zhipin.com">BOSS直聘</a>
+                            <a href="https://jingzhou.zbj.com/" title="https://jingzhou.zbj.com">猪八戒网</a>
+                            <a href="https://www.jobui.com/" title="https://www.jobui.com">职友集</a>
+                        </span>
+            <p><a href="http://www.siteloop.net/html/yuol.cn">长大在线制作</a></p>
+        </div>
+    </div>
+
+    <div class="sure">
+        <span onclick="quxiao()">X</span>
+        <h2>是否报名该兼职？</h2>
+        <input type="button" value="取消" onclick="quxiao()">
+        <input type="button" value="确定" onclick="queding()">
+    </div>
+    <div class="p">
+        <p></p>
+        <input type="button" value="确定" onclick="closetishi()">
+    </div>
+
+    <div id="cover"></div>
+    <script src="JS/main.js"></script>
+    <script src="JS/ckxq.js"></script>
+</body>
+
+</html>

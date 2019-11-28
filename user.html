@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="logo.ico" type="images/x-icon">
+    <title>个人中心</title>
+    <script src="jQuery/jquery-3.1.1.min.js"></script>
+    <script src="jQuery/cookie/src/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/user-daohang.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/meau.css">
+    <link rel="stylesheet" href="CSS/cover.css">
+    <link rel="stylesheet" href="CSS/p.css">
+
+</head>
+
+<body>
+    <!-- 水平导航栏 -->
+    <div class="commonTopbar">
+        <div class="w pos">
+            <div class="bar-left">
+                <a href="index.html">
+                    <img src="image/home-black.png" alt="首页">
+                    <span>长大兼职首页</span>
+                </a>
+            </div>
+            <div class="bar-right">
+                <a href="#" class="reback">
+                    <img src="image/exit.png" alt="退出登录">
+                    <span>退出</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 账户信息 -->
+    <div class="user-dh">
+        <div class="container">
+            <div class="top-left1">
+                <a href="#"> 长大兼职</a>
+            </div>
+            <div class="top-right1">
+                <ul>
+                    <li><a href="">个人中心</a></li>
+                    <li><a href="">账户设置</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="body-div container">
+        <div class="user-header meau1">
+            <a href=""><span>个人中心</span></a>
+        </div>
+        <div class="leftmeau-div">
+            <div class="left-content">
+                <ul class="leftmeau-ul">
+                    <li class="meau2 active">
+                        <a href="#">
+                            <img src="image/resume-fff.png" alt="简历" id="img-resume"> 我的微简历
+                        </a>
+                    </li>
+                    <li class="meau3">
+                        <a href="#">
+                            <img src="image/issue-black.png" alt="发布" id="img-issue"> 我的已发布
+                        </a>
+                    </li>
+                    <li class="meau4">
+                        <a href="#">
+                            <img src="image/work-black.png" alt="我的报名" id="img-work"> 我的已报名
+                        </a>
+                    </li>
+                    <li class="meau5">
+                        <a href="#">
+                            <img src="image/evaluate-black.png" alt="评价" id="img-evaluate"> 我的信誉度
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightmeau-div">
+            <div id="webpart_js_1">
+                <div id="meau2" class="choose active">
+                    <div class="resume border">
+                        <div class="resume-header">
+                            <span style="color: rag(102,102,102);">我的微简历</span>
+                            <a href="#" class="amend">
+                                <img src="image/amend.png" alt="修改">
+                                <span>修改</span>
+                            </a>
+                        </div>
+                        <div class="img"><img src="image/rsm-bkg.png" alt="背景图片"></div>
+                        <div class="message">
+                            <div class="message-left">
+                                <img src="image/jbxx.png" alt="基本信息">
+                            </div>
+                            <div class="message-right">
+                                <ul>
+                                    <li>
+                                        <img src="image/name.png" alt="name"> 姓名：
+                                        <span>张三</span>
+                                    </li>
+                                    <li>
+                                        <img src="image/sex.png" alt="sex"> 性别：
+                                        <span>女</span>
+                                    </li>
+                                    <li>
+                                        <img src="image/education.png" alt="education"> 学历：
+                                        <span>本科</span>
+                                    </li>
+                                    <li>
+                                        <img src="image/profession.png" alt="profession"> 职业：
+                                        <span>学生</span>
+                                    </li>
+                                    <li>
+                                        <img src="image/phone.png" alt="phone"> 手机号：
+                                        <span>12345678910</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="forme"></div>
+                        <div class="introduce">
+                            <div class="introduce-left">
+                                <p>
+                                    无
+                                </p>
+                            </div>
+                            <div class="introduce-right">
+                                <img src="image/wdys.png" alt="我的优势">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rwork border">
+                        <div class="rwork-header">
+                            <h2>我的微简历</h2>
+                        </div>
+                        <div class="rwork-body">
+                            <form action="#">
+                                <table>
+                                    <tr>
+                                        <td>真实姓名：</td>
+                                        <td><input type="text" name="name" id="jlname" autocomplete="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>性别：</td>
+                                        <td>
+                                            <input type="text" name="sex" id="jlsex" autocomplete="off" list="sexlist">
+                                            <datalist id="sexlist">
+                                                <option>男</option>
+                                                <option>女</option>
+                                            </datalist>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 学历：</td>
+                                        <td><input type="text" name="teach" id="jlteach" list="degreelist">
+                                            <datalist id="degreelist">
+                                                <option>无学历</option>
+                                                <option>小学</option>
+                                                <option>初中</option>
+                                                <option>高中</option>
+                                                <option>大学</option>
+                                                <option>研究生</option>
+                                                <option>博士生</option>
+                                            </datalist>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 职业：</td>
+                                        <td>
+                                            <input type="text" name="job" id="jljob"></td>
+                                    </tr>
+                                    <tr>
+                                        <td> 手机电话：</td>
+                                        <td>
+                                            <input type="tel" name="tel" id="jltel"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>我的优势：</td>
+                                        <td><input type="text" name="myAdvantage" id="jladv"></td>
+                                    </tr>
+                                </table>
+                                <input type="button" value="取消" class="back">
+                                <input type="button" value="保存">
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="meau3" class="choose">
+                    <div class="border issue-out">
+                        <div class="issue-header">
+                            <span>已发布的过的兼职</span>
+                            <input type="button" value="发布兼职" id="release-work">
+                        </div>
+                        <div class="issue-bottom">
+                            <table>
+                                <tr>
+                                    <td>信息标题</td>
+                                    <td>发布时间</td>
+                                    <td>详情</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="issue-init">
+                            <div class="issue-init-header">
+                                <span>兼职名字</span>
+                                <input type="button" value="招聘中" disabled="ture">
+                            </div>
+                            <div class="issue-init-time">
+                                <p>工作时间：
+                                    <span>2019-12-09 12:00</span>
+                                </p>
+                            </div>
+                            <input type="button" value="返回全部列表" onclick="backallform()">
+                            <div class="issue-init-body">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">报名</a></li>
+                                </ul>
+                                <table>
+                                    <tr style="display: none;">
+                                        <td class="sex">
+                                            名字
+                                            <img src="image/male.png">
+                                        </td>
+                                        <td>
+                                            <a href="#">查看简历</a>
+                                        </td>
+                                        <td>
+                                            <input type="button" value="未知">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border issue-in">
+                        <div class="issue-in-header">
+                            <h2>发布兼职</h2>
+                        </div>
+                        <div class="issue-in-body">
+                            <form action="#">
+                                <table>
+                                    <tr>
+                                        <td>我要招聘：</td>
+                                        <td><input type="text" id="_jobname" autocomplete="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>薪资：</td>
+                                        <td>
+                                            <input type="text" id="_money" autocomplete="off">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>工作时间：</td>
+                                        <td>
+                                            <input type="time" id="_time">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 工作地点：</td>
+                                        <td>
+                                            <input type="text" id="_place" autocomplete="off"></td>
+                                    </tr>
+                                    <tr>
+                                        <td> 招聘人数：</td>
+                                        <td>
+                                            <input type="number" min="0" id="_membernum">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>兼职/全职：</td>
+                                        <td><input type="text" name="myAdvantage" id="_parttime"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>联系电话</td>
+                                        <td>
+                                            <input type="tel" id="_tel">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>单位名称：</td>
+                                        <td>
+                                            <input type="text" id="_companyname">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>单位地址：</td>
+                                        <td>
+                                            <input type="text" id="_companyaddress">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            兼职描述：
+                                        </td>
+                                        <td>
+                                            <input type="text" name="" id="_interview">
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <input type="button" value="取消" class="back">
+                                <input type="button" value="保存">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="meau4" class="choose">
+                    <div class="border mine">
+                        <div class="mine-header">
+                            <h2>我的报名</h2>
+                        </div>
+                        <div class="mine-bottom">
+                            <table>
+                                <tr>
+                                    <td>兼职名称</td>
+                                    <td>工作时间</td>
+                                    <td>报名状态</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="meau5" class="choose">
+                    <div class="border eva">
+                        <div class="eva-header">
+                            <h2>我的信誉度</h2>
+                        </div>
+                        <div class="eva-body">
+                            <div class="eb-t">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">我被评分的</a></li>
+                                    <li><a href="#">我对Boss的评分</a></li>
+                                    <li><a href="#">我对兼职者的评分</a></li>
+                                </ul>
+                            </div>
+                            <div class="eb-b active">
+                                <table>
+                                    <tr>
+                                        <td>名字</td>
+                                        <td>
+                                            <span>9分</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="eb-a">
+                                <a href="#">我的全部评分</a>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>张三</td>
+                                            <td>服务员</td>
+                                            <td>
+                                                <span>9分</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="eb-c">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>张三</td>
+                                            <td>服务员</td>
+                                            <td>
+                                                <span>9分</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页尾 -->
+    <div class="bn-bottom ">
+        <div class="bottom ">
+            <span id="lo ">长大兼职</span>
+            <span>友情连接：
+                <a href="https://www.jianzhimao.com/ " title="https://www.jianzhimao.com ">兼职猫</a>
+                <a href="https://jingzhou.58.com " title="https://jingzhou.58.com ">58同城</a>
+                <a href="https://www.amap.com/ " title="https://www.amap.com ">高德地图</a>
+                <a href="https://www.zhipin.com/ " title="https://www.zhipin.com ">BOSS直聘</a>
+                <a href="https://jingzhou.zbj.com/ " title="https://jingzhou.zbj.com ">猪八戒网</a>
+                <a href="https://www.jobui.com/ " title="https://www.jobui.com ">职友集</a>
+            </span>
+            <p><a href="http://www.siteloop.net/html/yuol.cn ">长大在线制作</a></p>
+        </div>
+    </div>
+
+    <div id="cover"></div>
+    <div class="p">
+        <p></p>
+        <input type="button" value="确定" onclick="closetishi()">
+    </div>
+
+    <script src="JS/goto.js"></script>
+    <script src="JS/jobto.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/meau.js"></script>
+</body>
+
+</html>
