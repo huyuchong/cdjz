@@ -8,7 +8,7 @@
     transform: translate(-50%, -50%);
     border: 1px solid black;
     border-radius: 7%;
-    z-index: 3;
+    z-index: 3000;
 }
 
 .js-rgs-head,
@@ -99,7 +99,7 @@
     transform: translate(-50%, -50%);
     border: 1px solid black;
     border-radius: 7%;
-    z-index: 3;
+    z-index: 3000;
 }
 
 #submitregister {

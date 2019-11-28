@@ -18,6 +18,9 @@ if ($.cookie("work-name") == undefined) {
                 $(".work-left ul li:eq(2) span").text(data.data.membernum);
                 $(".money span").text(data.data.money);
                 $(".introduce-body ol li").text(data.data.interview);
+                $(".boss-body h6").text(data.data.employername);
+                $(".boss-body table tr:eq(0) td:eq(1)").text(data.data.employertel);
+                $(".boss-body table tr:eq(1) td:eq(1)").text(data.data.credit + "分");
             } else if (data.code == 502) {
                 console.log(data.msg);
             }

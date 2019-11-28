@@ -1,3 +1,30 @@
+function lookuserid(obj) {
+    $(".user-id").show();
+
+    $.ajax({
+        url: 'http://101.200.145.9/userout.php',
+        data: {
+            jobid: $(obj).siblings("input").val()
+        },
+        dataType: 'json',
+        success: function(data) {
+            console.log(1);
+
+        },
+        error: function(e) {
+            console.log(1);
+        }
+
+    })
+}
+
+function Xclose() {
+    $(".user-id").hide();
+}
+
+
+var al = 0;
+
 function lookjob(obj) {
     var _jobid = $(obj).next().val();
     var _jobtime = $(obj).parent().prev().text();
@@ -22,9 +49,24 @@ function lookjob(obj) {
             } else if (data.code == 200) {
                 $(".issue-init-body p").remove();
                 $(".issue-init-body table tr").show();
+                for (al; al < data.arr.length; al++) {
+                    $(".issue-init-body table tr:eq(" + al + ") td:eq(0) span").text(data.arr[al].name);
+                    $(".issue-init-body table tr:eq(" + al + ") td:eq(1) input").val(data.arr[al].userid)
+                    if (data.arr[al].sex == "女") {
+                        $(".issue-init-body table tr:eq(" + al + ") td:eq(0) img").attr('src', 'image/female.png');
+                    }
+                    if (data.arr[al].status == 510) {
+                        $(".issue-init-body table tr:eq(" + al + ") td:eq(2) input").val("未录取").css({ "background-color": "red", "border": "red" })
+                    } else
+                    if (data.arr[al].status == 520) {
+                        $(".issue-init-body table tr:eq(" + al + ") td:eq(2) input").val("已录取").css({ "background-color": "yellow", "border": "yellow" })
+                    }
+                    if (al < data.arr.length - 1) {
+                        $(".issue-init-body table tr:eq(0)").clone(true).appendTo(".issue-init-body table");
+                    }
+                }
 
             }
-
         },
         error: function(e) {
             console.log(1);
@@ -256,11 +298,33 @@ $(document).ready(function() {
     });
 
     //点击我的评价获取信息
-
+    var mycore = 0;
     $(".leftmeau-ul li:eq(3)").click(function() {
+        $.ajax({
+            type: "post",
+            url: "http://101.200.145.9/minepj.php",
+            data: {
+                loginid: loginid,
+            },
+            dataType: "json",
+            success: function(data) {
+                if (data.code == 600) {
+                    console.log(data.msg);
+                } else if (data.code == 200) {
+                    for (mycore; mycore < data.arr.length; mycore++) {
+                        $(".eb-a table tr:eq(" + mycore + ") td:eq(0)").text(data.arrp[mycore].jobname);
+                        $(".eb-a table tr:eq(" + mycore + ") td:eq(1) span").text(data.arrp[mycore].usercore + "分");
+                        if (mycore < data.arr.length - 1) {
+                            $(".eb-a tr:eq(0)").clone(true).appendTo(".eb-a table");
+                        }
+                    }
+                }
+            },
+            error: function(error) {
+                console.log(error);
+            }
 
-        console.log(4);
+        })
 
     })
-
 })

@@ -4,13 +4,8 @@ function runEvery10Sec() {
     $.ajax({
         type: "post",
         url: "http://101.200.145.9/jobout.php",
-        // data: id = loginid,
         dataType: "json",
         success: function(data) {
-            // console.log(data.arr[1].id);
-            // console.log(data.arr[1]);
-            // arr:{id,jobname,money,time,place,membernum,parttime,tel,interview,companyname,companyaddress}
-            // arr:{jobname,money,place,membernum,parttime,companyaddress}
             for (let a = 0; a < 8; a++) {
                 New(a, data.arr[a].jobname, data.arr[a].parttime, data.arr[a].place, data.arr[a].membernum, data.arr[a].money, data.arr[a].id);
             };

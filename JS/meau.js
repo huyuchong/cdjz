@@ -76,18 +76,28 @@ $(".navbar-nav>li").click(function() {
 })
 
 $(".navbar-nav>li:first-child").click(function() {
-    $(".eb-a").removeClass("active");
-    $(".eb-b").addClass("active");
+    $(".eb-b ,.eb-c").removeClass("active");
+    $(".eb-a").addClass("active");
     $(this).addClass("active");
     $(this).next().removeClass("active");
+    $(this).next().next().removeClass("active");
+})
 
+$(".navbar-nav>li:nth-child(2)").click(function() {
+    $(".eb-a,.eb-c").removeClass("active");
+    $(".eb-b").addClass("active");
+    $(this).addClass("active");
+    $(this).prev().removeClass("active");
+    $(this).next().removeClass("active");
 })
 
 $(".navbar-nav>li:last-child").click(function() {
-    $(".eb-b").removeClass("active")
-    $(".eb-a").addClass("active");
+    $(".eb-a, .eb-b").removeClass("active")
+    $(".eb-c").addClass("active");
     $(this).addClass("active");
     $(this).prev().removeClass("active");
+    $(this).prev().prev().removeClass("active");
+
 })
 
 
@@ -108,6 +118,8 @@ function back2() {
 function back() {
     back1();
     back2();
+    backallform();
+    Xclose();
 }
 
 var url = window.location.href;

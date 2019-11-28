@@ -318,7 +318,8 @@ table tr td:last-child img {
     border-bottom: 1px solid #999;
 }
 
-.eb-c .eb-b,
+.eb-c,
+.eb-b,
 .eb-a {
     margin-top: 10px;
     display: none;
@@ -409,4 +410,53 @@ table tr td:last-child img {
     border: none;
     border-radius: 10%;
     width: 10%;
+}
+
+.user-id {
+    display: none;
+    width: 35%;
+    border: 1px #999 solid;
+    padding: 20px 10px 5px;
+    position: absolute;
+    top: 25%;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.user-top,
+.user-center,
+.user-bottom {
+    display: block
+}
+
+.user-top {
+    text-align: center;
+}
+
+.user-top input {
+    background-color: #57c3e0;
+    color: #fff;
+    padding: 2px 9px;
+    border-radius: 25%;
+    border: #57c3e0;
+}
+
+.user-center h4,
+.user-bottom h4 {
+    color: #57c3e0;
+}
+
+.user-center ul li {
+    display: inline-block;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+.user-id .Xclose {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    font-size: 18px;
+    cursor: pointer;
 }
