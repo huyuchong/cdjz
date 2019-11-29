@@ -73,4 +73,5 @@ $(".position4 input[type='button'],.position-item .item-name").click(function() 
 
 function closetishi() {
     $("#cover,.p").hide();
+    location.reload();
 }

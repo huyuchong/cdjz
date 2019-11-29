@@ -62,6 +62,7 @@ function back1() {
 }
 
 $(".navbar-nav>li").click(function() {
+    back5();
     if ($(".eb-b").hasClass("active")) {
         $(".navbar-nav>li:first-child").siblings("li").removeClass("active");
         $(".navbar-nav>li:last-child").addClass("active");
@@ -76,6 +77,7 @@ $(".navbar-nav>li").click(function() {
 })
 
 $(".navbar-nav>li:first-child").click(function() {
+    back5();
     $(".eb-b ,.eb-c").removeClass("active");
     $(".eb-a").addClass("active");
     $(this).addClass("active");
@@ -84,6 +86,7 @@ $(".navbar-nav>li:first-child").click(function() {
 })
 
 $(".navbar-nav>li:nth-child(2)").click(function() {
+    back5();
     $(".eb-a,.eb-c").removeClass("active");
     $(".eb-b").addClass("active");
     $(this).addClass("active");
@@ -94,6 +97,7 @@ $(".navbar-nav>li:nth-child(2)").click(function() {
 $(".navbar-nav>li:last-child").click(function() {
     $(".eb-a, .eb-b").removeClass("active")
     $(".eb-c").addClass("active");
+    $('.eb-c').show();
     $(this).addClass("active");
     $(this).prev().removeClass("active");
     $(this).prev().prev().removeClass("active");
@@ -120,6 +124,8 @@ function back() {
     back2();
     backallform();
     Xclose();
+    back4();
+    back5();
 }
 
 var url = window.location.href;
@@ -132,4 +138,79 @@ if (index != -1) {
 function backallform() {
     $('.issue-init').hide();
     $('.issue-bottom').show();
+}
+
+function back3() {
+    $(".eb-c-hide").hide();
+    $(".eb-c").show();
+}
+
+function back4() {
+    $(".surelq").hide();
+}
+
+function back5() {
+    $(".eb-c-hide").hide();
+}
+
+var iduser;
+
+function thisjobpf(obj) {
+    iduser = $(obj).next().val();
+    $(".pf").show();
+}
+
+function pf() {
+    if ($(".pf input").val() == "") {
+        alert("评分不能为空");
+    } else {
+        $.ajax({
+            type: "post",
+            url: "http://101.200.145.9/pjuser2.php",
+            data: {
+                loginid: iduser, //这份工作的id
+                jobid: $("#jobidid").val(),
+                userscore: $(".pf input").val(),
+            },
+            dataType: "json",
+            success: function(data) {
+                alert(data.msg);
+                $(".pf input").val("");
+                $(".pf").hide();
+            }
+        })
+    }
+}
+
+
+var idjob;
+
+function thisjobpfboss(obj) {
+    idjob = $(obj).next().val();
+    $(".pfboss").show();
+    console.log(idjob);
+
+}
+
+
+function pfboss() {
+    if ($(".pfboss input").val() == "") {
+        alert("评分不能为空");
+    } else {
+        $.ajax({
+            type: "post",
+            url: "http://101.200.145.9/pjcompany2.php",
+            data: {
+                loginid: $.cookie("user-name"),
+                jobid: idjob,
+                companyscore: $(".pfboss input").val(),
+            },
+            dataType: "json",
+            success: function(data) {
+                alert(data.msg);
+                $(".pfboss input").val("");
+                $(".pfboss").hide();
+            }
+        })
+    }
 }

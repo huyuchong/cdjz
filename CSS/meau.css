@@ -343,6 +343,18 @@ table tr td:last-child img {
 
 .eb-b table tr {
     border-bottom: 1px solid #999;
+    margin-top: 1%;
+}
+
+.eb-b table tr td:last-child input {
+    width: 32%;
+    background-color: #57c3e0;
+    border: 1px solid #57c3e0;
+}
+
+.eb-c table tr td {
+    padding: 1% 0;
+    border-bottom: 1px solid #999;
 }
 
 .navbar-nav li a {
@@ -358,9 +370,15 @@ table tr td:last-child img {
     margin-top: 20px;
 }
 
+.eb-c table {
+    width: 100%;
+}
+
+.eb-c table tr td,
 .eb-a table tr td {
     text-align: center;
     font-size: 18px;
+    padding: 1% 0;
 }
 
 .eb-a table tr {
@@ -459,4 +477,109 @@ table tr td:last-child img {
     top: 3%;
     font-size: 18px;
     cursor: pointer;
+}
+
+.eb-c-hide {
+    display: none;
+}
+
+.eb-c-hide table {
+    width: 90%;
+}
+
+.eb-c-hide table tr {
+    text-align: center;
+    width: 100%;
+}
+
+.eb-c-hide table tr td:last-child input {
+    display: none;
+}
+
+.eb-c-hide table tr td {
+    font-size: 16px;
+    padding: 1% 0;
+    border-bottom: 0.5px solid #999;
+}
+
+.eb-c-hide button {
+    margin: 10px 40%;
+    width: 10%;
+    background: #57c3e0;
+    border: #57c3e0;
+    color: #fff;
+}
+
+.eb-c-hide p {
+    margin-top: 10px;
+}
+
+.eb-c input {
+    background: #57c3e0;
+    border: #57c3e0;
+    color: #fff;
+    padding: 1.5%;
+    border-radius: 5%;
+}
+
+.eb-c-hide input {
+    background: #57c3e0;
+    border: #57c3e0;
+    color: #fff;
+    padding: 1.5%;
+    border-radius: 5%;
+    width: 20%;
+}
+
+.surelq {
+    display: none;
+    background: #fff;
+    border: 1px solid #000;
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    transform: translate(-56%, -50%);
+    border-radius: 10%;
+}
+
+.surelq p {
+    height: 60%;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.surelq input {
+    display: inline-block;
+    width: 15%;
+    margin-left: 23%;
+}
+
+.pfboss,
+.pf {
+    display: none;
+    background: #fff;
+    border: 1px solid #000;
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    transform: translate(-56%, -50%);
+    border-radius: 10%;
+}
+
+.pfboss h3,
+.pf h3 {
+    height: 40%;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.pfboss input,
+.pf input {
+    display: inline-block;
+    width: 15%;
+    margin-left: 40%;
 }

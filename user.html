@@ -217,6 +217,7 @@
                                 </p>
                             </div>
                             <input type="button" value="返回全部列表" onclick="backallform()">
+                            <input type="hidden">
                             <div class="issue-init-body">
                                 <ul class="nav navbar-nav">
                                     <li><a href="#">报名</a></li>
@@ -232,7 +233,7 @@
                                             <input type="hidden">
                                         </td>
                                         <td>
-                                            <input type="button" value="未知">
+                                            <input type="button" value="未录取">
                                         </td>
                                     </tr>
                                 </table>
@@ -387,13 +388,15 @@
                             </div>
                             <div class="eb-b">
                                 <a href="#">我的全部评分</a>
+                                <p></p>
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <td>张三</td>
-                                            <td>服务员</td>
+                                            <td>工作名字</td>
+                                            <td>jobname</td>
                                             <td>
-                                                <span>9分</span>
+                                                <input type="button" value="评分" onclick="thisjobpfboss(this)">
+                                                <input type="hidden"><span>9分</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -401,16 +404,31 @@
                             </div>
                             <div class="eb-c">
                                 <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>张三</td>
-                                            <td>服务员</td>
-                                            <td>
-                                                <span>9分</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                    <tr>
+                                        <td>兼职名</td>
+                                        <td>工作时间</td>
+                                        <td>
+
+                                            <input type="button" value="查看此兼职" onclick="lookthisjob(this)">
+                                            <input type="hidden">
+                                        </td>
+                                    </tr>
                                 </table>
+                            </div>
+                            <div class="eb-c-hide">
+                                <p></p>
+                                <table>
+                                    <tr>
+                                        <td>兼职者名字</td>
+                                        <td>
+                                            <input type="button" value="评分" onclick="thisjobpf(this)">
+                                            <input type="hidden">
+                                            <p>兼职者评分</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button onclick="back3()">返回</button>
+                                <input type="hidden" id="jobidid">
                             </div>
                         </div>
                     </div>
@@ -438,6 +456,21 @@
     <div class="p">
         <p></p>
         <input type="button" value="确定" onclick="closetishi()">
+    </div>
+    <div class="surelq">
+        <p>是否录用该报名者？</p>
+        <input type="button" value="取消" onclick="back4()">
+        <input type="button" value="确定" onclick="luyon()">
+    </div>
+    <div class="pf">
+        <h3>请评分</h3>
+        <input type="number" min="1" max="10">
+        <button onclick="pf()">确定</button>
+    </div>
+    <div class="pfboss">
+        <h3>请评分</h3>
+        <input type="number" min="1" max="10">
+        <button onclick="pfboss()">确定</button>
     </div>
 
     <script src="JS/goto.js"></script>
